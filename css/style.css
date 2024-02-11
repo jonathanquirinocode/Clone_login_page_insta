@@ -8,6 +8,7 @@
 
 body{
     background-color: #fafafa;
+    margin-top: 6rem;
 }
 
 /*Containers*/
@@ -214,11 +215,41 @@ footer #footer-links{
     font-size: 12px;
 }
 
-#copyright{
-    margin-top: 10px;
-}
-
 footer p{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 14px;
+}
+
+/*Mobile*/
+
+@media (max-width: 450px){
+    body{
+        background-color: #fff;
+    }
+    
+    #banner-container{
+        display: none;
+    }
+    
+    #main-container, 
+    #form-box{
+        margin-top: 0;
+    }
+    #form-container,
+    #form-box,
+    #register-container,
+    #download-app{
+        width: 100%;
+        border: none;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
 }
